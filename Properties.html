@@ -154,30 +154,36 @@
             </div>
             <div style="width:720px;">
                <div class="single_appartment_part">
+                <div class="col-12">
+          <h2 class="contact-title">List Your Property</h2>
+          <h6 class="contact-title" style="font-size: 10px">We will contact you shortly when you fill this form correctly.</h6>
+        </div>
                  <div class="single_appartment_content">
                      <!--iframe frameborder="0" style="height:600px;width:100%;border:none; scroll:noscroll;" src='https://forms.zohopublic.in/secondhome1/form/PropertyListing/formperma/uJyAbV7ylPnH6hENY3kzTWbNso1a3KuT6SeDFxrJ90s'></iframe-->
-                     <form  class="needs-validation" novalidate>
+                     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+onload="if(submitted) {window.location='thankyou.html';}"></iframe>
+                     <form  class="needs-validation" action="https://docs.google.com/forms/d/e/1FAIpQLSda_Kt2iv9uKUS7Nqx8peU0QS_PsApQvxF6dfJ_Z6OGezAVkw/formResponse" target="hidden_iframe"  novalidate>
     <div class="form-group">
       <label for="uname">Owner Name:</label>
-      <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+      <input type="text" class="form-control" id="name" placeholder="Enter username" name="entry.1892698716" required>
       <div class="valid-feedback">Valid.</div>
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
     <div class="form-group">
       <label for="prop">No. of Properties</label>
-      <input type="text" class="form-control" id="prop" placeholder="Enter No of properties" name="prop" required>
+      <input type="text" class="form-control" id="prop" pattern="[0-9]{1}" title="Limit is 0-9" placeholder="Enter No of properties" name="entry.913364553" required>
       <div class="valid-feedback">Valid.</div>
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
     <div class="form-group">
       <label for="loc">Location</label>
-      <input type="text" class="form-control" id="loc" placeholder="Enter Location" name="loc" required>
+      <input type="text" class="form-control" id="loc" placeholder="Enter Location" name="entry.1686909623" required>
       <div class="valid-feedback">Valid.</div>
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
     <div class="form-group">
-      <label for="prop">No. of Properties</label>
-      <input type="text" class="form-control" id="prop" placeholder="Enter No of properties" name="prop" required>
+      <label for="prop">Contact</label>
+      <input type="text" class="form-control" id="conc" pattern="[0-9]{10}" title="please enter valid number" placeholder="Enter contact number" name="entry.1956719365" required>
       <div class="valid-feedback">Valid.</div>
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
